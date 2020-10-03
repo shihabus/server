@@ -2,13 +2,14 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+app.use("/static", express.static("static"));
+
 app.get("/", (req, res) => {
-  res.send("Work in progress! Hola from VS");
+  res.sendFile("index.html", { root: __dirname });
 });
 
-app.get("/demo", (req, res) => {
-  res.set("X-full-stack", "4life");
-  res.status(418);
+app.get("/health", (req, res) => {
+  res.status(200);
   res.send("Wakkanda forever");
 });
 
