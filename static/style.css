@@ -128,7 +128,7 @@ a {
   bottom: 0;
   z-index: 1000;
   width: 50px;
-  border-right: 1px dashed rgba(255, 255, 255, 0.3);
+  border-right: 1px dashed rgba(255, 255, 255, 0.6);
   color: #ff414d;
   font-family: "nimbus-sans", sans-serif;
   text-transform: uppercase;
@@ -173,7 +173,7 @@ a {
 }
 .side .bottom {
   top: auto;
-  bottom: 75px;
+  bottom: 100px;
 }
 .side .bottom:hover a {
   color: rgba(0, 0, 0, 0.2);
